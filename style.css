@@ -111,13 +111,38 @@ a.button:hover i {
 }
 /*PRESENTATION*/
 
-.line{
+.home .line{
     background-image: url(img/svg/line.svg);
     display: block;
-    position: absolute;
     width:193px ;
     height:2px;
-    left: 800px;
+    margin-left: -40px;
+}
+
+.presentation .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-left: -40px;
+}
+
+.actualite .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-bottom: 100px;
+    margin-left: -40px;
+}
+
+.livre .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-bottom: 100px;
+    margin-left: -40px;
 }
 
 .presentation{
@@ -146,10 +171,15 @@ a.button:hover i {
 
 /*MON ACTUALITÉ*/
 
+.center{
+    width: fit-content;
+    margin: auto;
+}
+
 h3{
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 100px;
+
 }
 
 h4{
@@ -253,6 +283,10 @@ h6{
     transform:translate(10px, -10px);
 }
 
+.container-anim:hover .marquee1{
+    transform:translate(10px, -10px);
+}
+
 .more{
     font-size: 14px;
     text-decoration: underline;
@@ -263,6 +297,31 @@ h6{
 
 .event-slider .container-anim{
     margin-bottom: 30px;
+}
+
+/*LIVRE D'OR*/
+
+.livre .container-anim{
+    width: fit-content;
+}
+
+.marquee1{
+    padding: 20px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+    transition : 0.2s
+}
+
+.name{
+    font-family: mont-bold;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.msg{
+    font-family: mont-medium;
+    font-size: 14px;
 }
 
 /*FOOTER*/
