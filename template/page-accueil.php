@@ -18,6 +18,7 @@ get_header();
     </div>
     <div class = "p1">
         <h1 class="step"><?php the_field('titre_p1');?></h1>
+        <i class="line"></i>
         <p><?php the_field('texte_p1');?></p>
         <div class="p1-button">
             <a class="button" href="#">
@@ -36,12 +37,12 @@ get_header();
 <div class="presentation">
     <div class="p2">
         <h2><?php the_field('titre_p2');?></h2>
+        <div class="fade1"></div>
         <p><?php the_field('texte_p2');?></p>
         <a class="button" href="#">
                 <i></i>
                 <span>Me découvrir</span>
             </a>
-        <span class="fade1"></span>
     </div>
     <div class="p2-img">
         <img src="<?php the_field('image_p2');?>" alt="Une photo de moi">
@@ -68,7 +69,9 @@ get_header();
                     </div>
                     <div class="black"></div>
                 </div>
-                <i></i>
+                <a href="#" class="more">
+                Découvrir tous les articles
+                </a>
             </div>
         </div>
         <div class="evenement">
@@ -94,7 +97,11 @@ get_header();
                         <p>Il y a 16 Jours</p>
                     </div>
                     <div class="black"></div>
+                    
                 </div>
+                <a href="#" class="more">
+                Découvrir tous les événements
+                </a>
             </div>
         </div>
     </div>

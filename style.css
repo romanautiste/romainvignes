@@ -17,6 +17,7 @@ header{
     transition: 0.5s;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 a{
@@ -75,14 +76,20 @@ a.button i {
     background-repeat: no-repeat;
     width: 45px;
     height: 23px;
-    position: absolute;
+    display: block;
     transition: 0.2s;
+}
+
+a.button{
+    display: flex;
+    width: fit-content;
 }
 
 a.button span {
     font-family: "mont-bold";
     font-size: 14px;
-    margin-left: 70px;
+    margin-left: 30px;
+    align-self: center;
 }
 
 a.button:hover i {
@@ -104,6 +111,15 @@ a.button:hover i {
 }
 /*PRESENTATION*/
 
+.line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    position: absolute;
+    width:193px ;
+    height:2px;
+    left: 800px;
+}
+
 .presentation{
     display: flex;
     justify-content: space-between;
@@ -114,9 +130,9 @@ a.button:hover i {
     background-image: url(img/png/fade1.png);
     width: 644px;
     height: 643px;
-    top: 0px;
-    left: 0px;
-    position: relative;
+    position: absolute;
+    z-index: -2;
+    left: -25%;
 }
 
 .p2 p{
@@ -150,7 +166,6 @@ h4{
 .event{
     background-color: white;
     border: 1px solid black;
-    margin-bottom: 30px;
     width : 415px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -214,6 +229,16 @@ h6{
 
 .article1{
     transition: 0.2s;
+    margin-bottom: 30px;
+}
+
+.event-slider{
+    margin: auto;
+}
+
+.evenement{
+    display: flex;
+    flex-direction: column;
 }
 
 .event{
@@ -226,6 +251,18 @@ h6{
 
 .container-anim:hover .article1{
     transform:translate(10px, -10px);
+}
+
+.more{
+    font-size: 14px;
+    text-decoration: underline;
+    color: grey;
+    font-family: mont-regular;
+    margin-top: 40px;
+}
+
+.event-slider .container-anim{
+    margin-bottom: 30px;
 }
 
 /*FOOTER*/
