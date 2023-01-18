@@ -1,0 +1,547 @@
+/*
+Theme Name: romain-vignes-theme
+Author: Roman KUZBINSKI
+*/
+
+/*ALL*/
+
+body{
+    background-color: #EEE2CD;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+
+header{
+    padding-top :20px; 
+    padding-bottom :20px;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header img{
+    padding-left: 65px;
+}
+
+.menu-container{
+    font-family: "m-bold";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 17px ;
+}
+
+.menu-container li{
+    padding-right: 72px;
+    font-size: 18px;
+}
+
+/*MON PROJET COLLBAORATIF*/
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/png/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: space-evenly;
+
+    .video {
+        width: 40%;
+
+        iframe {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .text {
+        font-family: "mont-regular";
+        font-size: 14px;
+        width: 40%;
+    }
+}
+
+
+
+h1, h2, h3{
+    font-family: "g";
+    font-size: 64px;
+}
+
+a.button i {
+    background-image: url(img/svg/arrow.svg);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 23px;
+    display: block;
+    transition: 0.2s;
+}
+
+a.button{
+    display: flex;
+    width: fit-content;
+}
+
+a.button span {
+    font-family: "mont-bold";
+    font-size: 14px;
+    margin-left: 30px;
+    align-self: center;
+}
+
+a.button:hover i {
+    transform: translateX(15px);
+}
+
+.p1-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.prestation .button{
+    margin-right: 50px;
+}
+
+.p1 p, .p2 p{
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.p
+/*PRESENTATION*/
+
+.home .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-left: -40px;
+}
+
+.presentation .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-left: -40px;
+}
+
+.actualite .container-anim:hover{
+    cursor:default;
+}
+
+.actualite .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-bottom: 100px;
+    margin-left: -40px;
+}
+
+.livre .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-bottom: 100px;
+    margin-left: -40px;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fade1{
+    background-image: url(img/png/fade1.png);
+    width: 644px;
+    height: 643px;
+    position: absolute;
+    z-index: -2;
+    left: -25%;
+}
+
+.fade2{
+    background-image: url(img/png/fade2.png);
+    width: 644px;
+    height: 643px;
+    position: absolute;
+    z-index: -2;
+    left: 80%;
+}
+
+.p2 p{
+    font-size : 14px;
+    font-family: "mont-regular";
+}
+
+.p2 {
+    margin-left: 180px;
+}
+
+/*MON ACTUALITÉ*/
+
+.center{
+    width: fit-content;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+h4{
+    font-family: "mont-semibold";
+    font-size : 36px;
+    padding-bottom: 40px;
+}
+
+.actu-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event{
+    background-color: white;
+    border: 1px solid black;
+    width : 415px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h5{
+    font-family: "mont-medium";
+    font-size: 20px;
+}
+
+.article1{
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 456px;
+}
+
+.actualite p{
+    font-size: 14px;
+    font-family: "mont-regular";
+    margin-top: 5px;
+}
+
+.article1-image{
+    background-image: url(img/png/article1.png);
+    width: 399px;
+    height: 252px;
+}
+
+h6{
+    font-size: 32px;
+    font-family: mont-medium;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.article p{
+    margin-bottom: 20px;
+}
+
+.article .button{
+    margin-left: auto;
+}
+
+.container-anim{
+    position: relative;
+}
+
+.black{
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.article1{
+    transition: 0.2s;
+    margin-bottom: 30px;
+}
+
+.event-slider{
+    margin: auto;
+}
+
+.more:hover{
+    font-style: italic;
+}
+
+.evenement{
+    display: flex;
+    flex-direction: column;
+}
+
+.event{
+    transition: 0.2s;
+}
+
+.list-line{
+    transition: 0.2s;
+}
+
+.container-anim:hover .event{
+    transform:translate(10px, -10px);
+}
+
+.container-anim:hover .article1{
+    transform:translate(10px, -10px);
+}
+
+.container-anim:hover .list-line{
+    transform:translate(10px, -10px);
+}
+
+.more{
+    font-size: 14px;
+    text-decoration: underline;
+    color: grey;
+    font-family: mont-regular;
+    margin-top: 40px;
+}
+
+.event-slider .container-anim{
+    margin-bottom: 30px;
+}
+
+/*LIVRE D'OR*/
+
+.marquee1{
+    padding: 20px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+    transition : 0.2s
+}
+
+.name{
+    font-family: mont-bold;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.msg{
+    font-family: mont-medium;
+    font-size: 14px;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    background-size: 100% 100%;
+    background-image: url(img/png/footer-bg.png);
+    font-family: "mont-regular" ;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 64px;
+    padding-top: 300px;
+}
+.left-footer{
+    text-align : center;
+    color : white;
+}
+
+.right-footer{
+    display: flex;
+}
+
+.right-footer ul{
+    margin-left:40px ;
+}
+
+.right-footer li:first-child{
+    font-family: mont-bold;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.right-footer li{
+    margin-bottom: 10px;;
+    color: white;
+}
+
+h6{
+    font-size: 36px;
+    font-family: mont-medium;
+}
+
+/*FONT*/
+
+@font-face {
+    font-family: "m-bold";
+    src: url(font/mabry/m-bold.otf);
+}
+
+@font-face {
+    font-family: "mont-bold";
+    src: url(font/montserrat/mont-bold.ttf);
+}
+
+@font-face {
+    font-family: "mont-regular";
+    src: url(font/montserrat/mont-regular.ttf);
+}
+
+@font-face {
+    font-family: "g";
+    src: url(font/glamore/g.otf);
+}
+
+@font-face {
+    font-family: "mont-medium";
+    src: url(font/montserrat/mont-medium.ttf);
+}
+
+@font-face {
+    font-family: "mont-semibold";
+    src: url(font/montserrat/mont-semi-bold.ttf);
+}
+
+/*REST CSS*/
+
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+pre {
+    all: revert;
+}
+/* remove default dot (•) sign */
+::marker {
+    content: "";
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+    all: revert;
+}
+
+
+/*SWIPER*/
+
+.swiper {
+    width: 100%;
+    padding-top : 20px;
+}
+
+.marquee__content {
+    position: relative;
+}
+
+/*
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    
+    div.video {
+        background-color: green;
+        grid-column: 3 / span 4;
+        height: 200px;
+    }
+
+    div.text {
+        background-color: red;
+        height: 200px;
+        grid-column: 9 / span 3;
+    }
+}
+*/

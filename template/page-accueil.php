@@ -4,19 +4,32 @@
 * Description: La maquette de la page d'accueil
 */
 get_header();
+$posts = get_posts(array(
+    'numberposts' => 1
+));
+
+$events = get_posts( array(
+    'numberposts' => 3,
+    'post_type'   => 'event'
+  ) );
 ?>
 
-
+<!-- 
+<div class="grid">
+    <div class="video"></div>
+    <div class="text"></div>
+</div>
+-->
 
 <div class="home">
-    <div>
+    <div class="video">
         <iframe width="600" height="360" src="<?php the_field('video'); ?>" 
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
         </iframe>
     </div>
-    <div class = "p1">
+    <div class="text">
         <div>
             <h1 class="step"><?php the_field('titre_p1');?></h1>
             <i class="line"></i>
@@ -64,19 +77,20 @@ get_header();
             <h4>Articles</h4>
             <div = article-slider>
                 <i></i>
-                <div class="container-anim">
-                    <div class="article1">
-                        <div class="article1-image"></div>
-                        <h6>L'histoire de Uman.</h6>
-                        <p>Comment une seule rencontre m'a fait <br>
-                            comprendre autant de choses...</p>
-                        <a href="#" class="button">
-                            <i></i>
-                            <span>Lire</span>
-                        </a>    
+                <?php foreach($posts as $post): ?>
+                    <div class="container-anim">
+                        <div class="article1">
+                            <div class="article1-image"></div>
+                            <h6><?php the_title(); ?></h6>
+                            <p><?php the_excerpt(); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="button">
+                                <i></i>
+                                <span>Lire</span>
+                            </a>    
+                        </div>
+                        <div class="black"></div>
                     </div>
-                    <div class="black"></div>
-                </div>
+                <?php endforeach; wp_reset_postdata(); ?>
                 <a href="#" class="more">
                 Découvrir tous les articles
                 </a>
@@ -84,29 +98,20 @@ get_header();
         </div>
         <div class="evenement">
             <h4>Événements</h4>
+            <div class="fade2"></div>
             <div class="event-slider">
+            <?php foreach($events as $event): 
+                $date = get_the_date('d/m/Y', $event);
+                $hours = get_the_date('G:i', $event);
+                ?>
                 <div class="container-anim">
                     <div class="event">
-                        <h5>Sortie du nouvel album le 10/05</h5>
-                        <p>Il y a 3 heures</p>
+                        <h5><?php echo $event->post_title; ?></h5>
+                        <p><?php echo $date; ?> <span style="font-weight: bold;"><?php echo $hours; ?></span></p>
                     </div>
                     <div class="black"></div>
                 </div>
-                <div class="container-anim">
-                    <div class="event">
-                        <h5>Nouvel chanson exclusive</h5>
-                        <p>Il y a 4 Jours</p>
-                    </div>
-                    <div class="black"></div>
-                </div>
-                <div class="container-anim">
-                    <div class="event">
-                        <h5>Concerts chez vous le 23/04</h5>
-                        <p>Il y a 16 Jours</p>
-                    </div>
-                    <div class="black"></div>
-                    
-                </div>
+            <?php endforeach; wp_reset_postdata(); ?>
                 <a href="#" class="more">
                 Voir tous les événements
                 </a>
@@ -120,16 +125,72 @@ get_header();
         <h3>Le livre d'or</h3>
         <i class="line"></i>
     </div>
-    <div class="container-anim">
-        <div class="marquee1">
-            <p class="name">François Barré</p>
-            <p class=msg>Cette chanson m'accompagne depuis que j'ai vu le <br>
-            film ; la douceur suave et fragile des sonorités.</p>
-        </div>
-        <div class="black"></div>
-    </div>
 </div>
-
-
-
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <div class="container-anim">
+            <div class="list-line">
+                <div class="marquee1">
+                    <p class="name">François Barré</p>
+                    <p class="msg">Cette chanson m'accompagne depuis que j'ai vu le
+                    film ; la douceur suave et fragile des sonorités.</p>
+                </div>
+            </div>
+            <div class="black"></div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="container-anim">
+            <div class="list-line">
+                <div class="marquee1">
+                    <p class="name">François Barré</p>
+                    <p class="msg">Cette chanson m'accompagne depuis que j'ai vu le
+                    film ; la douceur suave et fragile des sonorités.</p>
+                </div>
+            </div>
+            <div class="black"></div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="container-anim">
+            <div class="list-line">
+                <div class="marquee1">
+                    <p class="name">François Barré</p>
+                    <p class="msg">Cette chanson m'accompagne depuis que j'ai vu le
+                    film ; la douceur suave et fragile des sonorités.</p>
+                </div>
+            </div>
+            <div class="black"></div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="container-anim">
+            <div class="list-line">
+                <div class="marquee1">
+                    <p class="name">François Barré</p>
+                    <p class="msg">Cette chanson m'accompagne depuis que j'ai vu le
+                    film ; la douceur suave et fragile des sonorités.</p>
+                </div>
+            </div>
+            <div class="black"></div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="container-anim">
+            <div class="list-line">
+                <div class="marquee1">
+                    <p class="name">François Barré</p>
+                    <p class="msg">Cette chanson m'accompagne depuis que j'ai vu le
+                    film ; la douceur suave et fragile des sonorités.</p>
+                </div>
+            </div>
+            <div class="black"></div>
+        </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>

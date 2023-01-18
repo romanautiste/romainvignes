@@ -23,14 +23,11 @@
         <div class="localisation">
             <ul>
                 <li>Localisation</li>
-                <li>11 chemin des margerites</li>
-                <li>38 500</li>
                 <li>Grenoble</li>
             </ul>
         </div>
     </div>
 </footer>
-    
   <?php wp_footer(); ?>
   </body>
 </html>
