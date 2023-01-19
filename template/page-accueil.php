@@ -122,7 +122,7 @@ $events = get_posts( array(
 
 <div class="livre">
     <div class="center">
-        <h3>Le livre d'or</h3>
+        <h3>Citations</h3>
         <i class="line"></i>
     </div>
 </div>

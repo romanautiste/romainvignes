@@ -1,30 +1,23 @@
-// instantiate the scrollama
-const scroller = scrollama();
-
-// setup the instance, pass callback functions
-scroller
-  .setup({
-    step: ".step",
-  })
-  .onStepEnter((response) => {
-    document.getElementsByClassName('header').style.backgroundColor="#EEE2CD";
-  })
-  .onStepExit((response) => {
-    document.getElementsByClassName('header').style.backgroundColor="EEE2CD0";
-  });
-
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();    
+  if (scroll <= 50) { // change this 500 by your own need
+      $(".header").addClass("lightHeader").removeClass("darkHeader");
+  } else {
+      $(".header").addClass("darkHeader").removeClass("lightHeader");
+  }
+});
 
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 4,
     centeredSlides: true,
     spaceBetween: 30,
     freeMode: true,
     grabCursor: true,
     autoplay: {
-      delay: 2000,
+    delay: 2000,
     }
   });
 

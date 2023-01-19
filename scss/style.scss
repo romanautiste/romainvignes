@@ -19,6 +19,15 @@ header{
     position: fixed;
     width: 100%;
     z-index: 10;
+
+    &.lightHeader {
+        background-color: transparent;
+    }
+
+    &.darkHeader {
+        background-color: white;
+        box-shadow : 0px 1px 0px black;
+    }
 }
 
 a{
@@ -125,7 +134,7 @@ a.button:hover i {
 .p
 /*PRESENTATION*/
 
-.home .line{
+.text .line{
     background-image: url(img/svg/line.svg);
     display: block;
     width:193px ;
@@ -163,6 +172,11 @@ a.button:hover i {
     margin-left: -40px;
 }
 
+.home .p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .presentation{
     display: flex;
     justify-content: space-between;
@@ -176,6 +190,8 @@ a.button:hover i {
     position: absolute;
     z-index: -2;
     left: -25%;
+    top: 1100px;
+
 }
 
 .fade2{
@@ -184,7 +200,9 @@ a.button:hover i {
     height: 643px;
     position: absolute;
     z-index: -2;
-    left: 80%;
+    left: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .p2 p{
@@ -301,6 +319,7 @@ h6{
 .evenement{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .event{
@@ -360,6 +379,8 @@ h6{
 
 /*FOOTER*/
 
+/*
+
 footer{
     background-size: 100% 100%;
     background-image: url(img/png/footer-bg.png);
@@ -369,9 +390,22 @@ footer{
     padding-bottom: 64px;
     padding-top: 300px;
 }
+
+*/
+
+footer{
+    background-size: 100% 100%;
+    background-image: url(img/png/footer-fade.png);
+    font-family: "mont-regular" ;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    padding-top: 300px;
+}
 .left-footer{
     text-align : center;
     color : white;
+    align-self: center;
 }
 
 .right-footer{
@@ -523,6 +557,12 @@ pre {
 
 .marquee__content {
     position: relative;
+}
+
+/*PAGE CONTACT*/
+
+.contact{
+    display: flex;
 }
 
 /*
