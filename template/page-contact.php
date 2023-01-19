@@ -12,9 +12,12 @@ get_header();
     <h1><?php the_field("titre-contact") ?></h1>
     <div class="line"></div>
 
+    <div class="fade3"></div>
+
     <div class="contact-container">
         <div class="contact-img">
             <img src="<?php the_field("image-contact") ?>" alt="Image de la page contact">
+            <p><?php the_field("texte-droit") ?></p>
         </div>
         <div class="form">
             <?php echo do_shortcode("[wpforms id='59']"); ?>

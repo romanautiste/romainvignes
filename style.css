@@ -55,7 +55,7 @@ header img {
   font-size: 18px;
 }
 
-/*MON PROJET COLLBAORATIF*/
+/*CRÉONS ENSEMBLE*/
 .home {
   display: flex;
   align-items: center;
@@ -77,6 +77,9 @@ header img {
   font-family: "mont-regular";
   font-size: 14px;
   width: 40%;
+}
+.home p {
+  margin: 40px 0px;
 }
 
 h1, h2, h3 {
@@ -121,6 +124,10 @@ a.button:hover i {
 .p1 p, .p2 p {
   margin-top: 20px;
   padding-bottom: 40px;
+}
+
+.p2 {
+  width: 50%;
 }
 
 .p .contact-title .line {
@@ -199,6 +206,16 @@ a.button:hover i {
   left: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.fade3 {
+  background-image: url(img/png/fade1.png);
+  width: 644px;
+  height: 643px;
+  position: absolute;
+  z-index: -2;
+  left: -25%;
+  top: 80px;
 }
 
 .p2 p {
@@ -390,6 +407,15 @@ h6 {
   margin-left: 375px;
   margin-bottom: 100px;
 }
+.contact .contact-img {
+  width: 633px;
+}
+.contact p {
+  width: 100%;
+  font-size: 12px;
+  font-family: "mont-regular";
+  margin-top: 20px;
+}
 
 /*FOOTER*/
 /*
@@ -470,6 +496,10 @@ h6 {
 @font-face {
   font-family: "mont-semibold";
   src: url(font/montserrat/mont-semi-bold.ttf);
+}
+@font-face {
+  font-family: "m-medium-italic";
+  src: url(/font/mabry/m-medium-italic.otf);
 }
 /*REST CSS*/
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {

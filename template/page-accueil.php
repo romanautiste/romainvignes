@@ -31,12 +31,12 @@ $events = get_posts( array(
     </div>
     <div class="text">
         <div>
-            <h1><?php the_field('titre_p1');?></h1>
+            <h1 class=""><?php echo the_field('titre_p1', false);?></h1>
             <i class="line"></i>
         </div>
         <p><?php the_field('texte_p1');?></p>
         <div class="p1-button">
-            <a class="button" href="#">
+            <a class="button" href="<?php get_permalink('2') ?>">
                 <i></i>
                 <span>Télécharger</span>
             </a>

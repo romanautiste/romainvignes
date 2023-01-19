@@ -59,7 +59,7 @@ header img{
     font-size: 18px;
 }
 
-/*MON PROJET COLLBAORATIF*/
+/*CRÉONS ENSEMBLE*/
 
 .home{
     display: flex;
@@ -84,6 +84,10 @@ header img{
         font-family: "mont-regular";
         font-size: 14px;
         width: 40%;
+    }
+
+    p{
+        margin: 40px 0px;
     }
 }
 
@@ -132,6 +136,11 @@ a.button:hover i {
     margin-top: 20px;
     padding-bottom: 40px;
 }
+
+.p2{
+    width: 50%;
+}
+
 
 .p
 /*PRESENTATION*/
@@ -217,6 +226,16 @@ a.button:hover i {
     background-repeat: no-repeat;
 }
 
+.fade3{
+    background-image: url(img/png/fade1.png);
+    width: 644px;
+    height: 643px;
+    position: absolute;
+    z-index: -2;
+    left: -25%;
+    top: 80px;
+}
+
 .p2 p{
     font-size : 14px;
     font-family: "mont-regular";
@@ -225,6 +244,7 @@ a.button:hover i {
 .p2 {
     margin-left: 180px;
 }
+
 
 /*MON ACTUALITÉ*/
 
@@ -415,8 +435,19 @@ h6{
         margin-bottom: 100px;
     }
     
-
+    .contact-img{
+        width: 633px;
+    }
+    
+    p{
+        width : 100%;
+        font-size: 12px;
+        font-family: "mont-regular";
+        margin-top: 20px;
+    }
 } 
+
+
 
 
 /*FOOTER*/
@@ -505,6 +536,11 @@ h6{
 @font-face {
     font-family: "mont-semibold";
     src: url(font/montserrat/mont-semi-bold.ttf);
+}
+
+@font-face {
+    font-family: "m-medium-italic";
+    src: url(/font/mabry/m-medium-italic.otf);
 }
 
 /*REST CSS*/
