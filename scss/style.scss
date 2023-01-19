@@ -19,6 +19,8 @@ header{
     position: fixed;
     width: 100%;
     z-index: 10;
+    top: 0;
+    left: 0;
 
     &.lightHeader {
         background-color: transparent;
@@ -134,6 +136,14 @@ a.button:hover i {
 .p
 /*PRESENTATION*/
 
+.contact-title .line{
+    background-image: url(img/svg/line.svg);
+    display: block;
+    width:193px ;
+    height:2px;
+    margin-left: -40px;
+}
+
 .text .line{
     background-image: url(img/svg/line.svg);
     display: block;
@@ -171,6 +181,8 @@ a.button:hover i {
     margin-bottom: 100px;
     margin-left: -40px;
 }
+
+
 
 .home .p{
     margin-top: 25px;
@@ -375,6 +387,36 @@ h6{
     font-size: 14px;
 }
 
+/*PAGE CONTACT*/
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact{
+
+    h1{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    label{
+        font-family: mont-medium ;
+        font-size: 16px ;
+    }
+
+    .line {
+        background-image: url(img/svg/line.svg);
+        display: block;
+        width: 193px;
+        height: 2px;
+        margin-left: 375px;
+        margin-bottom: 100px;
+    }
+    
+
+} 
 
 
 /*FOOTER*/
@@ -559,12 +601,6 @@ pre {
     position: relative;
 }
 
-/*PAGE CONTACT*/
-
-.contact{
-    display: flex;
-}
-
 /*
 div.grid {
     display: grid;
@@ -572,16 +608,14 @@ div.grid {
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     
-    div.video {
+    div.contact-img {
         background-color: green;
-        grid-column: 3 / span 4;
-        height: 200px;
+        grid-column: 1 / span 6;
     }
 
     div.text {
         background-color: red;
-        height: 200px;
-        grid-column: 9 / span 3;
+        grid-column: 8 / span 6;
     }
 }
 */

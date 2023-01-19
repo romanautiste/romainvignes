@@ -17,6 +17,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
+  top: 0;
+  left: 0;
 }
 header.lightHeader {
   background-color: transparent;
@@ -121,7 +123,15 @@ a.button:hover i {
   padding-bottom: 40px;
 }
 
-.p .text .line {
+.p .contact-title .line {
+  background-image: url(img/svg/line.svg);
+  display: block;
+  width: 193px;
+  height: 2px;
+  margin-left: -40px;
+}
+
+.text .line {
   background-image: url(img/svg/line.svg);
   display: block;
   width: 193px;
@@ -358,6 +368,29 @@ h6 {
   font-size: 14px;
 }
 
+/*PAGE CONTACT*/
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+.contact label {
+  font-family: mont-medium;
+  font-size: 16px;
+}
+.contact .line {
+  background-image: url(img/svg/line.svg);
+  display: block;
+  width: 193px;
+  height: 2px;
+  margin-left: 375px;
+  margin-bottom: 100px;
+}
+
 /*FOOTER*/
 /*
 
@@ -529,11 +562,6 @@ pre {
   position: relative;
 }
 
-/*PAGE CONTACT*/
-.contact {
-  display: flex;
-}
-
 /*
 div.grid {
     display: grid;
@@ -541,18 +569,45 @@ div.grid {
     grid-column-gap: 32px;
     grid-row-gap: 32px;
 
-    div.video {
+    div.contact-img {
         background-color: green;
-        grid-column: 3 / span 4;
-        height: 200px;
+        grid-column: 1 / span 6;
     }
 
     div.text {
         background-color: red;
-        height: 200px;
-        grid-column: 9 / span 3;
+        grid-column: 8 / span 6;
     }
 }
 */
+body div.wpforms-container-full .wpforms-form input[type=text], body div.wpforms-container-full .wpforms-form input[type=email], body div.wpforms-container-full .wpforms-form textarea {
+  width: 527px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 1px 0px;
+  max-width: 100%;
+  border-radius: 0px;
+  font-family: mont-regular;
+}
+body div.wpforms-container-full .wpforms-form textarea:focus {
+  border: none;
+  box-shadow: 0px 1px 0px;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-required-label {
+  color: black;
+}
+body div.wpforms-container-full .wpforms-form button[type=submit] {
+  border-radius: 25px;
+  background-color: white;
+  font-family: mont-bold;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.2s;
+  position: relative;
+  left: 80%;
+}
+body div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+  border: none;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -31,7 +31,7 @@ $events = get_posts( array(
     </div>
     <div class="text">
         <div>
-            <h1 class="step"><?php the_field('titre_p1');?></h1>
+            <h1><?php the_field('titre_p1');?></h1>
             <i class="line"></i>
         </div>
         <p><?php the_field('texte_p1');?></p>
