@@ -21,3 +21,17 @@ $(window).scroll(function() {
     }
   });
 
+let dropdownStatut = false;
+
+function dropdown(){
+  console.log("Hello World");
+  let d = document.getElementById("dropdown-menu");
+  dropdownStatut = !dropdownStatut;
+  if (dropdownStatut){
+    d.style.display="flex";
+  }
+  else{
+    d.style.display="none";
+  }
+}
+

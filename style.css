@@ -138,6 +138,14 @@ a.button:hover i {
   margin-left: -40px;
 }
 
+.musique .line {
+  background-image: url(img/svg/line.svg);
+  display: block;
+  width: 193px;
+  height: 2px;
+  margin-left: -40px;
+}
+
 .text .line {
   background-image: url(img/svg/line.svg);
   display: block;
@@ -638,6 +646,171 @@ body div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 body div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   border: none;
+}
+
+body .musique .titre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 100px;
+}
+body .musique .clock i {
+  background-image: url(img/svg/clock.svg);
+  width: 26px;
+  height: 25px;
+  display: block;
+  background-repeat: no-repeat;
+}
+body .musique .download i {
+  background-image: url(img/svg/download.svg);
+  width: 27px;
+  height: 25px;
+  display: block;
+  background-repeat: no-repeat;
+}
+body .musique p {
+  font-size: 20px;
+  font-family: mont-medium;
+}
+body .musique .music-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 160px;
+  margin-right: 160px;
+  box-shadow: 0px 1px 0px;
+  padding-bottom: 5px;
+  margin-top: 100px;
+}
+body .musique .part1 {
+  margin-left: 40px;
+}
+body .musique .part2 {
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+body .musique .down-arrow {
+  background-image: url(img/svg/down-arrow.svg);
+  width: 30px;
+  height: 15px;
+  display: block;
+  background-repeat: no-repeat;
+}
+body .musique .his-music {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+body .musique .his-music .part2 {
+  align-self: center;
+}
+body .musique .his-music .part1 {
+  justify-content: left;
+  margin-left: 0px;
+}
+body .musique audio::-webkit-media-controls-panel {
+  background-color: white;
+  justify-self: left;
+}
+body .musique #dropdown-menu {
+  display: none;
+  justify-content: space-between;
+  background-color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+body .musique #dropdown-menu i {
+  margin-left: 40px;
+}
+body .musique #dropdown-menu .download1 {
+  background-image: url(img/svg/download.svg);
+  width: 27px;
+  height: 25px;
+  display: block;
+  background-repeat: no-repeat;
+}
+body .musique #dropdown-menu .bandcamp {
+  background-image: url(img/svg/bandcamp.svg);
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-repeat: no-repeat;
+}
+body .musique #dropdown-menu .description {
+  margin-right: 0px;
+  justify-self: center;
+  width: 50%;
+  font-size: 16px;
+}
+body .musique #dropdown-menu p {
+  font-family: mont-regular;
+  font-size: 20px;
+}
+body .musique .flex-item-dropdown {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+body .musique .flex-item-dropdown:last-child {
+  margin-bottom: 20px;
+}
+body .musique .flex-item-dropdown p {
+  margin-left: 30px;
+}
+body .musique .down-arrow {
+  cursor: pointer;
+}
+
+section.articles-page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+section.articles-page div.container-anim {
+  align-self: flex-start;
+}
+section.articles-page div.container-anim a {
+  width: 100%;
+}
+section.articles-page div.container-anim:nth-child(odd) {
+  grid-column: 2/span 4;
+}
+section.articles-page div.container-anim:nth-child(even) {
+  grid-column: 8/span 4;
+}
+section.articles-page div.container-anim div.article1 {
+  margin-bottom: 0;
+  width: 100%;
+}
+section.articles-page div.container-anim div.article1 div.article1-image {
+  width: 100%;
+}
+
+.page-titre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 100px;
+}
+.page-titre .line {
+  background-image: url(img/svg/line.svg);
+  display: block;
+  width: 193px;
+  height: 2px;
+  margin-left: -40px;
+  margin-bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

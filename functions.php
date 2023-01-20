@@ -5,6 +5,7 @@ function add_style() {
   wp_enqueue_style('swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', false);
   wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.3.min.js', false, 1, true);
   wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', false, 1, true);
+  wp_enqueue_script('swiper', '', false, 1, true);
   wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false);
   wp_enqueue_script('main-script', get_template_directory_uri() . '/js/script.js', ['jquery', 'swiper'], 1, true);
 }
